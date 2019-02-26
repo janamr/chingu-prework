@@ -9,29 +9,71 @@
         <!-- Add additional CSS & JS files as necessary here -->
     </head>
     <body>
-        <!-- Add your site or application content here -->
-        <div id="root">
-            <img src="src/assets/simple-boilerplate-logo@3x.png" class="logo" alt="logo" />
-            <h1>Welcome to Simple Boilerplate!</h1>
-            <p>
-                This boilerplate is ready for HTML/CSS, Javascript, and JQuery projects. 
-                It includes a live server that lets you see HTML/JS/CSS changes with every save.
-            </p>
-            
-            <p id="subtext">
-                An Example JavaScript Hook.
-            </p>
+        <nav>
+          <ul class="nav-menu">
+            <li><a href="">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Features</a></li>
+            <li><a href="">Add to Slack</a></li>
+          </ul>
+        </nav>
+        <header>
+          <div class="light-blue">
+              <h1>TickyBot</h1>
+              <h5>Let your team manage their support tickets 100% inside Slack</h5>
+              <button>Add to Slack</button>
+              <img src="/src/assets/slack.svg" alt="slack">
+              <img src="/src/assets/tickybot.svg" alt="tickybot-img">
 
-            <h2>Instructions:</h2>
+          </div>
+          <div class="white-bg">
+            <h2>What is TickyBot</h2>
+            <p>TickyBot is a Slack Bot 🤖 that lets you use support tickets on Slack. This way, you don't need to leave your beloved channel to assist your users, if you don't feel like it.</p>
             <p>
-                To see live changes, please go to the root folder ('simple-boilerplate/')
-                and run "npm start".
-            </p>
-            <p>
-                To start coding, start changing the files within src/css and src/js. 
-                Images can be stored in src/assets.
-            </p>
-        </div>
+                With TickyBot you can easily check if you've received new tickets, change their status, or write a reply, and the ticket will instantly update itself on our site.</p>
+            <p>Support requests shouldn't be handled through Slack's direct messages.</p>
+            <p>Image about someone asking silly questions and the workplace admin asking him/her to open a support ticket so other admins could look into the issue.</p>
+          </div>
+          <div class="green-bg">
+            <h2>How it Works</h2>
+            <div id="box-left">
+              <img src="/src/assets/workplace.svg" alt="workplace img">
+              <p>You can add TickyBot to your Slack workplace by scrolling down or clicking here</p>
+            </div>
+            <div id="box-middle">
+              <img src="/src/assets/bubble.svg" alt="bubble img">
+              <p>Your users can open a ticket by typing /ticket and their message into the chat field</p>
+            </div>
+            <div id="box-right">
+              <img src="/src/assets/tasks.svg" alt="tasks img">
+              <p>Once you or another admin solved their problems you can type /ticket close #id to close the ticket</p>
+            </div>
+
+          </div>
+          <div class="last-section">
+            <h2>Start Using TickyBot Today</h2>
+            <p>TickyBot allows Slack teams to manage their support tickets 100% inside Slack, without having to switch between different apps.</p>
+            <button>Add to Slack</button>
+            <p>... so you don't need to go back and forth with another app.</p>
+          </div>
+
+
+        </header>
+        <main>
+
+        </main>
+        <footer>
+            <div class="footer">
+                <section class="section-left">
+                    <p>Made with heart by Jana</p>
+                    <p>Check me out on link to my github</p>
+                    <p>The app is not created by, affiliated with, or supported by Slack Technologies, Inc.</p>
+                </section>
+                <section class="section-right">
+                    <a href="#" id="footer-img"><img src="/src/assets/top.svg"></a>
+                </section>
+            </div>
+        </footer>
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.js"></script>
         <!-- ================================ -->
         <!-- Add more JavaScript files here!! -->
