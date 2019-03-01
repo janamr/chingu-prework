@@ -1,9 +1,54 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ----- NAV BAR ----- */
+
+nav {
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #40596b;
+  text-align: center;
+  padding: 0.8rem;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  font-size: 1.3rem;
+  text-decoration: none;
+  display: inline-block;
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+
+ul a {
+  color: #f3d05e;
+  transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+
+}
+
+ul a:hover {
+  color: #eef9fd;
+}
+
+/* ----- MAIN STUFF ----- */
+
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #2b2b2b;
-  color: rgb(214, 214, 214);
-  max-width: 900px;
-  margin: 0 auto;
+  color: rgb(31, 31, 31);
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
 }
 
 #root {
@@ -19,10 +64,58 @@ body {
   margin: 0 auto;
 }
 
+.nav-menu {
+  background-color: rgba(0,0,0,.75);
+
+}
+
+#intro-tickybot {
+  background-color: #55c0ec;
+
+}
+
+#what-is-tickybot {
+  background-color: white;
+
+}
+
+#how-it-works {
+  flex-direction: row;
+  background-color: #90ddaa;
+
+}
+
+footer {
+  display: block;
+  position: absolute;
+}
+.footer {
+  background-color: rgba(0,0,0,.75);
+  color: antiquewhite;
+  /* margin: 0 auto;
+  padding: 0; */
+}
+
 h1 {
   margin-top: 50px;
+}
+
+h3 {
+  font-weight: 300;
+  font-size: 40px;
+  font-family: 'Signika', sans-serif;
 }
 
 p {
   font-size: 22px;
 }
+
+footer .section-right {
+  text-align: end;
+  /* width: 80px; */
+}
+footer .section-left {
+  text-align: start;
+  /* width: 50%; */
+}
+
